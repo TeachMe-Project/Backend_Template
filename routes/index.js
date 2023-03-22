@@ -1,7 +1,7 @@
-import express from "express";
-import cors from "cors";
-import bodyParser from "body-parser";
-import authRouter from "./user.Route";
+import express from 'express';
+import cors from 'cors';
+import bodyParser from 'body-parser';
+import authRouter from './user.Route';
 
 const app = express();
 
@@ -10,6 +10,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 app.use(express.json());
 
-app.use("/api/users", authRouter);
+app.use('/api/users', authRouter);
 
 export default app;

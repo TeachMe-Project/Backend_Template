@@ -1,3 +1,8 @@
-import log from "./logger";
+import log from './logger';
 
-export { log };
+const test = () => {
+  const count = 5;
+  console.log('count: %d', count);
+};
+
+export { log, test };
